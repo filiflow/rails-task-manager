@@ -1,0 +1,8 @@
+<h1><%= @task.title %></h1>
+<h4><%= @task.details %></h4>
+<p><%= @task.completed %></p>
+
+<%# <%= button_to "Edite cette tâche", edit_path, method: :post, class: "btn btn-primary" %>
+
+<div> <i class="fa-solid fa-pen"></i> <%= link_to 'Edite cette tâche', edit_task_path() %></div>
+<div><i class="fa-sharp fa-solid fa-rotate-left"></i> <%= link_to 'Retourner à ma liste', tasks_path() %></div>
